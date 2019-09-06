@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="root"></div>
+        <script src="./dependencyies/react.development.js"></script>
+        <script src="./dependencyies/react-dom.development.js"></script>
+        <script src="./dependencyies/babel.js"></script>
+        <script type="text/babel">
+            class Hellomessage extends React.Component {
+                render() {
+                    return <h1>Hello {this.props.name}</h1>
+                }
+            }
+
+            ReactDOM.render(
+                <Hellomessage name="jhon"/>,
+                document.getElementById("root")
+                )
+        </script>
+    </body>
+</html>

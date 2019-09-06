@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="root"></div>
+        <script src="./dependencyies/react.development.js"></script>
+        <script src="./dependencyies/react-dom.development.js"></script>
+        <script src="./dependencyies/babel.js"></script>
+        <script type="text/babel">
+            var names = ['Alice','Emily','Kate'];
+
+            ReactDOM.render(
+                <div>
+                    {
+                        names.map(function (name,index) {
+                            return <div key={index}>Hello, {name}!</div>
+                        })
+                    }    
+                </div>,
+                document.getElementById("root")
+            );
+        </script>
+    </body>
+</html>
